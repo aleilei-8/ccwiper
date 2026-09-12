@@ -1,0 +1,14 @@
+{
+  "protected_dirs": [
+    "C:\\Windows",
+    "C:\\Program Files",
+    "C:\\Program Files (x86)",
+    "C:\\ProgramData",
+    "C:\\$Recycle.Bin"
+  ],
+  "protected_exts": [
+    ".exe", ".dll", ".sys", ".bat", ".cmd", ".msi",
+    ".com", ".scr", ".drv", ".lnk", ".ini"
+  ],
+  "large_file_threshold": 1000000000
+}
