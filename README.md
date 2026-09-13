@@ -85,6 +85,23 @@ ccwiper/
 
 ---
 
+## 打包为单文件 exe（免安装分发）
+
+想直接把 exe 发给别人、或自己双击用？项目自带 `build_exe.py`，一键打包成免安装单文件。
+
+```bash
+# 需要带 tkinter 的 Python（如系统 Python 3.12），managed 3.13 缺 tkinter 会失败
+pip install customtkinter
+python build_exe.py
+# 产物：dist/CCWiper.exe （双击即跑，无需 Python 环境）
+```
+
+- `build_exe.py` 会自动安装 PyInstaller，用 `--onefile --windowed` 打包
+- 包含 `config/default_rules.json`，打包后配置仍可正常读取
+- `dist/`、`build/`、`*.spec` 已被 `.gitignore` 忽略，不会进仓库——exe 请本机生成，勿提交大文件
+
+---
+
 ## 许可证
 
 [MIT](LICENSE) —— 可自由使用、修改、分发。
